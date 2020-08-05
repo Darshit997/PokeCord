@@ -1,0 +1,14 @@
+$suppressErrors
+
+$nomention
+$onlyIf[$getUserVar[afk]!=;]
+
+$setUserVar[afk;;$authorID]
+
+<@$authorID>, welcome back! I removed your afk status for you.
+
+$editIn[5s;<@$authorID>, welcome back! I removed your afk status for you.
+`..self-destructs in 10 seconds!`]
+$deleteIn[15s]
+
+$changeUsernameWithID[$authorID;$username]
